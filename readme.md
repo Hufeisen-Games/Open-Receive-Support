@@ -1,0 +1,5 @@
+- Install Java on your computer(https://www.java.com/de/).
+- Open the cmd.
+- Run cd <folder of the .jar file>.
+- Run java -jar RS3.3.jar.
+- The Bot is now online.

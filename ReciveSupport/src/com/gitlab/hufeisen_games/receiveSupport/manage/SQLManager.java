@@ -1,0 +1,32 @@
+package com.gitlab.hufeisen_games.receiveSupport.manage;
+
+public class SQLManager {
+
+	public static void onCreate() {
+		
+		LiteSQL.onUpdate("CREATE TABLE IF NOT EXISTS supportchannels(id INTEGER NOT NULL PRIMARY KEY AUTOINCREMENT, guildid INTEGER, channelid INTEGER)");
+		
+		LiteSQL.onUpdate("CREATE TABLE IF NOT EXISTS supportroles(id INTEGER NOT NULL PRIMARY KEY AUTOINCREMENT, guildid INTEGER, roleid INTEGER)");
+		
+		LiteSQL.onUpdate("CREATE TABLE IF NOT EXISTS joinmessage(id INTEGER NOT NULL PRIMARY KEY AUTOINCREMENT, guildid INTEGER, value INTEGER)");
+		
+		LiteSQL.onUpdate("CREATE TABLE IF NOT EXISTS joinvoice(id INTEGER NOT NULL PRIMARY KEY AUTOINCREMENT, guildid INTEGER, value INTEGER)");
+		
+		LiteSQL.onUpdate("CREATE TABLE IF NOT EXISTS settings(id INTEGER NOT NULL PRIMARY KEY AUTOINCREMENT, guildid INTEGER, language VARCHAR)");
+		
+		LiteSQL.onUpdate("CREATE TABLE IF NOT EXISTS waitingmusic(id INTEGER NOT NULL PRIMARY KEY AUTOINCREMENT, guildid INTEGER, url VARCHAR)");
+		
+		LiteSQL.onUpdate("CREATE TABLE IF NOT EXISTS supporttoken(id INTEGER NOT NULL PRIMARY KEY AUTOINCREMENT, userid INTEGER, token INTEGER)");
+		
+		LiteSQL.onUpdate("CREATE TABLE IF NOT EXISTS hasvoted(id INTEGER NOT NULL PRIMARY KEY AUTOINCREMENT, userid INTEGER, value INTEGER)");
+		
+		LiteSQL.onUpdate("CREATE TABLE IF NOT EXISTS prefix(id INTEGER NOT NULL PRIMARY KEY AUTOINCREMENT, guildid INTEGER, prefix VARCHAR)");
+		
+		LiteSQL.onUpdate("CREATE TABLE IF NOT EXISTS logs(id INTEGER NOT NULL PRIMARY KEY AUTOINCREMENT, guildid INTEGER, categoryid INTEGER)");
+		
+		LiteSQL.onUpdate("CREATE TABLE IF NOT EXISTS sendlogs(id INTEGER NOT NULL PRIMARY KEY AUTOINCREMENT, guildid INTEGER, messageid INTEGER, exception VARCHAR, external VARCHAR, errorId INTEGER)");
+		
+		
+	}
+
+}

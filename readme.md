@@ -1,4 +1,6 @@
 - Install Java on your computer(https://www.java.com/de/).
+- Create a Bot Application on https://discord.com/developers/applications.
+- Activate PRESENCE INTENT and SERVER MEMBERS INTENT.
 - Open the cmd.
 - Run cd <folder of the .jar file>.
 - Run java -jar ORS1.0.jar.
